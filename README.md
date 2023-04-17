@@ -1,3 +1,6 @@
-## Playfair Cypher
+# EnCrypting Project
+- Desenvolvedor: Ailton Cesar
 
-Programa que codifica ou decodifica frases para Cifra de Playfair
+
+## O que é este repositório?
+EnCrypting 
