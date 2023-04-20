@@ -8,6 +8,6 @@ public class Main {
 
         /* EXECUTE AQUI! */
         Menu triggerMenu = new Menu();
-        triggerMenu.menu();
+        triggerMenu.mainMenu();
     }
 }
