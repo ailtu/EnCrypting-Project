@@ -1,5 +1,12 @@
 package PlayfairCypher;
 
 public class PlayfairCypher {
-    // classe para codificação e decodificação em cifra de playfair...
+
+    public void decodificar() {
+        System.out.println("--");
+    }
+
+    public void codificar() {
+        System.out.println("--");
+    }
 }
