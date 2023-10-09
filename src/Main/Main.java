@@ -66,3 +66,45 @@ public class Solucao {
         }
     }
 }
+
+
+aquii
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Solucao {
+    private boolean[][] grafo;
+
+    public Solucao(boolean[][] grafo) {
+        this.grafo = grafo;
+    }
+
+    public Integer[] solucao(int inicio) {
+        int tamanho = grafo.length;
+        boolean[] visitado = new boolean[tamanho];
+        Queue<Integer> fila = new LinkedList<>();
+        fila.add(inicio);
+        int[] resultado = new int[tamanho];
+        int index = 0;
+
+        while (!fila.isEmpty()) {
+            int no = fila.poll();
+            visitado[no] = true;
+            resultado[index++] = no;
+
+            for (int i = 0; i < tamanho; i++) {
+                if (grafo[no][i] && !visitado[i]) {
+                    fila.add(i);
+                }
+            }
+        }
+
+        Integer[] resultadoFinal = new Integer[index];
+        for (int i = 0; i < index; i++) {
+            resultadoFinal[i] = resultado[i];
+        }
+
+        return resultadoFinal;
+    }
+}
